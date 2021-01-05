@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="form-group">
+   <label class="col-md-4 control-label" for="singlebutton"></label>
+   <div class="col-md-4 center-block">
+      <a href="/dts">
+      	<button id="singlebutton" name="singlebutton" class="btn btn-primary btn-lg center-block">
+          Scan RFID
+       </button>
+       <br>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" disabled style="border-radius: 5px;">
+        {% for element in message %}
+          <p>{{ element }} </p>
+        {% endfor %}
+
+      </textarea>
+      </a>
+      <center><a href="/"><button>Home</button></a>
+  </center>
+   </div>
+</div>
+
+  
+</div>
+
+	
+</body>
+</html>

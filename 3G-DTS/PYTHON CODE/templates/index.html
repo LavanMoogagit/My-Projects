@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+  <style type="text/css">
+  		.navbar{
+  			background: #0C52AC;
+  			border:0px;
+  		}
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" style="text-align: center">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- <ul class="nav nav-justified"> -->
+      <li><a style="color: white" href="#" class="navbar-brand">3GDTS</a></li>
+    <!-- </ul> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="dtsdothtml" style="color: white"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+ <div class="container">
+  <!-- <h2>Form control: input</h2>
+  <p>The form below contains two input elements; one of type text and one of type password:</p> -->
+  <form method="post" action="/recharge">
+    <div class="form-group">
+      <label for="usr">UID:</label>
+      <input type="text" class="form-control" id="usr" name="uid" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Recharge:</label>
+      <input type="number" class="form-control" id="pwd" name="recharge" required>
+    </div>
+    <div class="form-group">
+    	<button type="submit" class="btn btn-success">recharge</button>
+    </div>
+    	
+  </form>
+ 	
+</div>
+
+
+<div class="form-group">
+   <label class="col-md-4 control-label" for="singlebutton"></label>
+   <div class="col-md-4 center-block">
+      <a href="/demo">
+      	<button id="singlebutton" name="singlebutton" class="btn btn-primary btn-lg center-block">
+          Proceed to Demo
+       </button>
+      </a>
+   </div>  
+</div>
+	<!-- <button type="button" class="btn btn-default btn-lg">Large button</button> -->
+
+</body>
+</html>
